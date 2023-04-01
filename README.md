@@ -1,2 +1,2 @@
 "# photo_editter" 
-use python tkinter to make a simple photo editter
+use python tkinter to make a simple photo editter (PNG files)
