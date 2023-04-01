@@ -3,9 +3,9 @@
 from tkinter.constants import CENTER
 from tkinter.messagebox import *
 import tkinter as tk
-from tkinter import filedialog				#開啟檔案對話框
-import tkinter.colorchooser as cc 			#顏色選擇器
-from PIL import Image,ImageDraw,ImageFont   #圖片處理
+from tkinter import filedialog				#file chooser
+import tkinter.colorchooser as cc 			#color chooser
+from PIL import Image,ImageDraw,ImageFont               #photo
 
 ''' initialize window'''
 window = tk.Tk()
@@ -16,7 +16,7 @@ window.resizable(False, False)
 
 def loadFile():    
     if loadFile_en.get() is None:
-        file_path = filedialog.askopenfilename(filetypes = (("png files", "*.png"), ("all files", "*.*")))	#開啟檔案對話框並且選擇檔案, filetypes: 顯示指定的副檔名
+        file_path = filedialog.askopenfilename(filetypes = (("png files", "*.png"), ("all files", "*.*")))	#open file, filetypes: 顯示指定的副檔名
         loadFile_en.insert(0, file_path)	                                                                #丟到旁邊的Entry中    
     else:
         file_path = filedialog.askopenfilename(filetypes = (("png files", "*.png"), ("all files", "*.*")))
